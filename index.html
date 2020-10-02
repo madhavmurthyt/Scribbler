@@ -28,8 +28,8 @@
     </div>
 
     <div id="subheader2">
-        <button class="button" data-toggle="modal" data-target="#signinModal" >Sign In</button>
-        <button class="button" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+        <button class="btn btn-primary" data-target="#signinModal" data-toggle="modal">Sign In</button>
+        <button class="btn btn-primary" data-target="#signupModal" data-toggle="modal">Sign Up</button>
     </div>
 
 
@@ -50,15 +50,19 @@
 
 
                         <label class="labelText">Name</label>
-                        <input id="firstName" placeholder="Enter your name" type="text" class="form-control" required="true">
+                        <input class="form-control" id="firstName" placeholder="Enter your name" required="true"
+                               type="text">
 
                         <label class="labelText">Username</label>
-                        <input id="email" placeholder="Enter your username" type="email" class="form-control" required="true">
+                        <input class="form-control" id="email" placeholder="Enter your username" required="true"
+                               type="email">
                         <label class="labelText">Password</label>
-                        <input id="password" placeholder="Enter your password" type="password" class="form-control" required="true">
+                        <input class="form-control" id="password" placeholder="Enter your password" required="true"
+                               type="password">
                         <label class="labelText">Confirm Password</label>
-                        <input id="cpassword" placeholder="Re-enter your password" type="password" class="form-control" required="true">
-                        <button class="submit-btn" >Sign Up</button>
+                        <input class="form-control" id="cpassword" placeholder="Re-enter your password" required="true"
+                               type="password">
+                        <button class="btn btn-success">Sign Up</button>
                     </form>
 
 
@@ -82,10 +86,12 @@
                 <div class="modal-body">
                     <form>
                         <label class="labelText">Username</label>
-                        <input id="email" placeholder="Enter your username" type="email" class="form-control" required="true">
+                        <input class="form-control" id="email" placeholder="Enter your username" required="true"
+                               type="email">
                         <label class="labelText">Password</label>
-                        <input id="password" placeholder="Enter your password" type="password" class="form-control" required="true">
-                        <button class="submit-btn" >Sign In</button>
+                        <input class="form-control" id="password" placeholder="Enter your password" required="true"
+                               type="password">
+                        <button class="btn btn-success">Sign In</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -95,10 +101,31 @@
         </div>
     </div>
 
-                    <!-- All Posts and Create Posts buttons  -->
+    <!-- All Posts and Create Posts buttons  -->
     <div id="postButtons">
-        <button class="post_button" onclick="">All Posts</button>
-        <button class="post_button" onclick="">Create Post</button>
+        <button class="btn btn-warning" onclick="">All Posts</button> &nbsp;
+        <button class="btn btn-warning" data-target="#penpostModal" data-toggle="modal">Create Post</button>
+    </div>
+
+    <div class="modal fade" id="penpostModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                    <h4 class="modal-title">Pen Your Post</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label class="labelText">Title</label>
+                        <input class="form-control" placeholder="Enter title of your post" required="true" type="text">
+                        <label class="labelText">Contents</label>
+                        <textarea Placeholder="Enter the contents of your post" class="form-control" required="true"
+                                  rows="10"> </textarea>
+                        <button class="btn btn-success" style="width: 100px;">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

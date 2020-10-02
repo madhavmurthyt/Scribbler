@@ -9,14 +9,8 @@
     font-size: 14px;
 }
 
-.button {
-    font-family: 'Arial';
-    background: blue;
-    color: white;
-    align-content: baseline;
-    height: 30px;
-    width: 80px;
-}
+
+
 
 #subheader1 {
     padding-top: 1%;
@@ -24,6 +18,7 @@
     float: left;
     display: flex;
     flex-direction: column;
+
 }
 
 #subheader2 {
