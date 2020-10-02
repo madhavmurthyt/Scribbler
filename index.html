@@ -2,12 +2,84 @@
 <html>
 
 <head>
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/common.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+
     <!-- TODO: Include Font Awesome file here -->
+
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu%20Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<script src="scripts/common.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div class="bg">
+
     <!-- TODO: Include all your code for the header and home page here -->
+    <div id="subheader1">
+
+        <span id="heading1"> ScriBBler </span>
+        <span id="heading2"> Explore, Imagine, Create </span>
+    </div>
+
+    <div id="subheader2">
+        <button class="button" id="signIn">Sign In</button>
+        <button class="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
+    </div>
+
+
+    <!-- Getting Started Modal -->
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                    <h4 class="modal-title">Getting Started</h4>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+
+
+                        <label class="labelText">Name</label>
+                        <input id="firstName" placeholder="Enter your name" type="text" class="form-control" required="true">
+
+                        <label class="labelText">Username</label>
+                        <input id="email" placeholder="Enter your username" type="email" class="form-control" required="true">
+                        <label class="labelText">Password</label>
+                        <input id="password" placeholder="Enter your password" type="password" class="form-control" required="true">
+                        <label class="labelText">Confirm Password</label>
+                        <input id="cpassword" placeholder="Re-enter your password" type="password" class="form-control" required="true">
+                        <button class="submit-btn" >Sign
+                            Up
+                        </button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- All Posts and Create Posts buttons  -->
+    <div id="postButtons">
+        <button class="post_button" onclick="">All Posts</button>
+        <button class="post_button" onclick="">Create Post</button>
+    </div>
+
+</div>
+
+
 </body>
 
 </html>

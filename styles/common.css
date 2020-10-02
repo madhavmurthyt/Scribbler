@@ -1,0 +1,33 @@
+#heading1 {
+    font-family: 'Montez', cursive;
+    color: blue;
+    font-size: 24px;
+}
+
+#heading2 {
+    font-family: 'Ubuntu Mono';
+    font-size: 14px;
+}
+
+.button {
+    font-family: 'Arial';
+    background: blue;
+    color: white;
+    align-content: baseline;
+    height: 30px;
+    width: 80px;
+}
+
+#subheader1 {
+    padding-top: 1%;
+    padding-left: 1%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#subheader2 {
+    padding-top: 1%;
+    padding-right: 1%;
+    float: right;
+}

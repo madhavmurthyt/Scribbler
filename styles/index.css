@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../images/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: seagreen;
+    color: #fff;
+    padding: 2%;
+    font-size: 22px;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10px 0;
+
+}
+@media (max-width: 500px){
+    label {
+        color: green;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    label {
+        color: red;
+    }
+}
+
+#postButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25%; /* 15% from the top and centered */
+
+}
+
+.post_button {
+    background-color: darkgoldenrod;
+    color: #fff;
+    font-family: Arial;
+    height: 30px;
+    width: 100px;
+}
