@@ -28,12 +28,15 @@ form {
 .submit-btn {
     background-color: seagreen;
     color: #fff;
-    padding: 2%;
-    font-size: 22px;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bolder;
+
     margin-top: 10px;
     border: 0;
     cursor: pointer;
-    width: 100%;
+
+
 }
 
 label {
@@ -68,4 +71,9 @@ label {
     font-family: Arial;
     height: 30px;
     width: 100px;
+}
+
+.modal-footer {
+    align-content: center;
+
 }

@@ -28,23 +28,21 @@
     </div>
 
     <div id="subheader2">
-        <button class="button" id="signIn">Sign In</button>
-        <button class="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
+        <button class="button" data-toggle="modal" data-target="#signinModal" >Sign In</button>
+        <button class="button" data-toggle="modal" data-target="#signupModal">Sign Up</button>
     </div>
 
 
     <!-- Getting Started Modal -->
-
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="signupModal" role="dialog">
         <div class="modal-dialog">
-
 
             <!-- Modal content -->
             <div class="modal-content">
                 <div class="modal-header">
 
                     <button class="close" data-dismiss="modal" type="button">&times;</button>
-                    <h4 class="modal-title">Getting Started</h4>
+                    <h4 class="modal-title">Get Started</h4>
                 </div>
 
                 <div class="modal-body">
@@ -60,9 +58,7 @@
                         <input id="password" placeholder="Enter your password" type="password" class="form-control" required="true">
                         <label class="labelText">Confirm Password</label>
                         <input id="cpassword" placeholder="Re-enter your password" type="password" class="form-control" required="true">
-                        <button class="submit-btn" >Sign
-                            Up
-                        </button>
+                        <button class="submit-btn" >Sign Up</button>
                     </form>
 
 
@@ -71,7 +67,35 @@
         </div>
     </div>
 
-            <!-- All Posts and Create Posts buttons  -->
+    <!-- Sign in Modal -->
+    <div class="modal fade" id="signinModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                    <h4 class="modal-title">Welcome Back !</h4>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <label class="labelText">Username</label>
+                        <input id="email" placeholder="Enter your username" type="email" class="form-control" required="true">
+                        <label class="labelText">Password</label>
+                        <input id="password" placeholder="Enter your password" type="password" class="form-control" required="true">
+                        <button class="submit-btn" >Sign In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    Not a member? Sign Up
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    <!-- All Posts and Create Posts buttons  -->
     <div id="postButtons">
         <button class="post_button" onclick="">All Posts</button>
         <button class="post_button" onclick="">Create Post</button>
