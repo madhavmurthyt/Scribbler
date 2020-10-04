@@ -1,0 +1,44 @@
+.container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#editButton {
+    float: right;
+}
+
+
+.commentsArea {
+    rows: 10;
+    min-width: 100%;
+}
+
+.blogbutton {
+    font-size:15px;
+    background: #e75480;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 0;
+    max-width: 8%;
+    color: white;
+}
+
+#likes, #author {
+    font-family: "Ubuntu Mono";
+    color: darkgray;
+}
+
+
+
+#postheading {
+    display: flex;
+    justify-content: center;
+}
+
+
